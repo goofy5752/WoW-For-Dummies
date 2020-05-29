@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.128
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WoWForDummies.WebApi", "WoWForDummies.WebApi\WoWForDummies.WebApi.csproj", "{3C719D75-0C8B-4EE1-A4D2-5E201ACB51E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WoWForDummies.Services", "WoWForDummies.Services\WoWForDummies.Services.csproj", "{3D0940BF-6BE5-4148-811B-04553636C0B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWForDummies.Data", "WoWForDummies.Data\WoWForDummies.Data.csproj", "{E60987C1-CA77-4B41-A698-1BC996D25CB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWForDummies.Common", "WoWForDummies.Common\WoWForDummies.Common.csproj", "{CDD2CCAA-61F4-40B1-A603-266C9D49E22E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWForDummies.Mapping", "WoWForDummies.Mapping\WoWForDummies.Mapping.csproj", "{5A4026EB-F5D1-4C7F-8A6B-F64C2FEA1C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWForDummies.Dtos", "WoWForDummies.Dtos\WoWForDummies.Dtos.csproj", "{810CB022-6C90-46A3-AF7E-EC1EFDB25F2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C719D75-0C8B-4EE1-A4D2-5E201ACB51E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C719D75-0C8B-4EE1-A4D2-5E201ACB51E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C719D75-0C8B-4EE1-A4D2-5E201ACB51E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C719D75-0C8B-4EE1-A4D2-5E201ACB51E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0940BF-6BE5-4148-811B-04553636C0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0940BF-6BE5-4148-811B-04553636C0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0940BF-6BE5-4148-811B-04553636C0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0940BF-6BE5-4148-811B-04553636C0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E60987C1-CA77-4B41-A698-1BC996D25CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E60987C1-CA77-4B41-A698-1BC996D25CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E60987C1-CA77-4B41-A698-1BC996D25CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E60987C1-CA77-4B41-A698-1BC996D25CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD2CCAA-61F4-40B1-A603-266C9D49E22E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD2CCAA-61F4-40B1-A603-266C9D49E22E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD2CCAA-61F4-40B1-A603-266C9D49E22E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD2CCAA-61F4-40B1-A603-266C9D49E22E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4026EB-F5D1-4C7F-8A6B-F64C2FEA1C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4026EB-F5D1-4C7F-8A6B-F64C2FEA1C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4026EB-F5D1-4C7F-8A6B-F64C2FEA1C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4026EB-F5D1-4C7F-8A6B-F64C2FEA1C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810CB022-6C90-46A3-AF7E-EC1EFDB25F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810CB022-6C90-46A3-AF7E-EC1EFDB25F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810CB022-6C90-46A3-AF7E-EC1EFDB25F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810CB022-6C90-46A3-AF7E-EC1EFDB25F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01D27D19-3C88-4898-889D-7CBD815B2813}
+	EndGlobalSection
+EndGlobal
