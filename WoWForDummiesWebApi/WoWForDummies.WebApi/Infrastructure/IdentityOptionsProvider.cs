@@ -1,4 +1,4 @@
-﻿namespace WoWForDummies.Data.Common
+﻿namespace WoWForDummies.WebApi.Infrastructure
 {
     using System;
     using Microsoft.AspNetCore.Identity;
