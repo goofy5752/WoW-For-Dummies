@@ -7,6 +7,7 @@
     using Microsoft.Extensions.Options;
     using Infrastructure;
     using WoWForDummies.Dtos.Identity;
+    using Common;
     using WoWForDummies.Services.Identity.Contracts;
 
     public class IdentityController : ApiController
@@ -39,6 +40,7 @@
 
             if (result.Succeeded)
             {
+                await this._userManager.AddToRoleAsync(user, GlobalConstants.UserRole);
                 return Ok();
             }
 

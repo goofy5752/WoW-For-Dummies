@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WoWForDummies.Data\WoWForDummies.Data.csproj" />
     <ProjectReference Include="..\WoWForDummies.Dtos\WoWForDummies.Dtos.csproj" />
+    <ProjectReference Include="..\WoWForDummies.Mapping\WoWForDummies.Mapping.csproj" />
     <ProjectReference Include="..\WoWForDummies.Services\WoWForDummies.Services.csproj" />
   </ItemGroup>
 

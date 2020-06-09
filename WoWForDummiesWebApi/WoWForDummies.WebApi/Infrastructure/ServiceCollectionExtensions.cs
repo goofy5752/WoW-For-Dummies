@@ -1,7 +1,4 @@
-﻿using WoWForDummies.Services.Identity;
-using WoWForDummies.Services.Identity.Contracts;
-
-namespace WoWForDummies.WebApi.Infrastructure
+﻿namespace WoWForDummies.WebApi.Infrastructure
 {
     using System.Text;
     using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -11,6 +8,12 @@ namespace WoWForDummies.WebApi.Infrastructure
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.IdentityModel.Tokens;
+    using Services.Identity;
+    using Services.Identity.Contracts;
+    using Data.Seeder;
+    using WoWForDummies.Data.Common;
+    using WoWForDummies.Data.Common.Contracts;
+    using Data.Seeder.Contracts;
     using Data;
     using Data.Models;
 
@@ -74,6 +77,9 @@ namespace WoWForDummies.WebApi.Infrastructure
             => services.AddSignalR();
 
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
-            => services.AddTransient<IIdentityService, IdentityService>();
+            => services
+                .AddScoped(typeof(IRepository<>), typeof(EfRepository<>))
+                .AddTransient<IIdentityService, IdentityService>()
+                .AddTransient<ISeeder, Seeder>();
     }
 }

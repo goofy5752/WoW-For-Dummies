@@ -1,12 +1,16 @@
 namespace WoWForDummies.WebApi
 {
+    using System.Reflection;
+
     using Infrastructure;
+    using Data.Seeder.Contracts;
+    using Dtos.Identity;
 
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Hosting;
+    using Mapping;
 
     public class Startup
     {
@@ -27,14 +31,16 @@ namespace WoWForDummies.WebApi
                 .AddControllers();
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ISeeder seeder)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            AutoMapperConfig.RegisterMappings(typeof(LoginRequestDto).GetTypeInfo().Assembly);
+
+            //Seed database with roles, users, etc ..
+
+            seeder.SeedDatabase();
 
             app
+                .UseDeveloperExceptionPage()
                 .UseRouting()
                 .UseCors(options => options
                     .AllowAnyOrigin()
